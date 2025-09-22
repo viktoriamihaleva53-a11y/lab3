@@ -20,17 +20,38 @@
 5. Вычислить объем шара через диаметр:
    - `V` = `(4.0 / 3.0)` * `PI` * `r` * `r` * `r`;
 6. Выводим результаты расчетов:
-   - `printf("Площадь поверхности шара: %.2f\n", S);
+   - `printf("Площадь поверхности шара: %.2f\n", S);`
    - `printf("Объем шара: %.2f\n", V);`
 7. **Конец**
 
 ### Блок-схема 
-https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1Uy1O22g5uUKma3O_LC1W0mQx0nuQ3zL3 
+<img width="744" height="2564" alt="image (4)" src="https://github.com/user-attachments/assets/35c6fbd9-b03b-419f-b291-d2ebc7233c1f" />
+
 
 ## 2. Реализация программы
+#include <stdio.h>
+#include <locale.h>
 
-<!-- Вставьте код программы-->
+#define PI 3.14
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	double D, r, S, V;
+
+	printf("Введите диаметр шара: ");
+	scanf("%lf", &D);
+	r = D / 2.0;
+	S = 4 * PI * r * r;
+	V = (4.0 / 3.0) * PI * r * r * r;
+	printf("Площадь поверхности шара: %.2f\n", S);
+	printf("Объем шара: %.2f\n", V);
+
+	return 0;
+}
 
 ## 3. Результаты работы программы
 
-[После запуска программы просто скопируйте вывод из консоли и вставьте его в этот раздел ]
+Введите диаметр шара: 10
+Площадь поверхности шара: 314,00
+Объем шара: 523,33
