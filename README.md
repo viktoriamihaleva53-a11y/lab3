@@ -52,8 +52,5 @@ int main()
 
 ## 3. Результаты работы программы
 
-Введите диаметр шара: 10
+<img width="432" height="80" alt="image" src="https://github.com/user-attachments/assets/7afab9d2-78fc-4e67-b5eb-33c1d318e9a5" />
 
-Площадь поверхности шара: 314,00
-
-Объем шара: 523,33
